@@ -19,7 +19,7 @@ if TESSERACT_CMD:
     pytesseract.pytesseract.tesseract_cmd = TESSERACT_CMD
 
 # Initialize OpenAI client (adapt to your client)
-#client = OpenAI(api_key="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")
+client = OpenAI(api_key="ssh -xxxx ")
 
 # ----- image helpers -----
 def pdf_to_image(pdf_path, dpi=300):
