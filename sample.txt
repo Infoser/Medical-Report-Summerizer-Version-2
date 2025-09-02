@@ -1,0 +1,7 @@
+setx OPENAI_API_KEY ""
+
+issuatstudy090@gmail.com (mrs-v2) = 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
+issuatstudy090@gmail.com (mrs-v1) = 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
+
+
+ssunitasahu05@gmail.com (hello) = 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

@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+</head>
+<body>
+
+<div class="main">
+  <!-- Card 1 -->
+  <div class="card">
+    <img src="{% static 'media/ishan.png' %}" width="150" height="150" alt="ishan">
+    <div>
+      <h2>Ishan Kumar Sahu</h2>
+      <p>
+        Hi!! I am Ishan Kumar Sahu. I am an AI/ML enthusiast currently working on model training and project building. 
+        I am currently enrolled in Bhilai Institute of Technology Durg pursuing B.Tech CSE (Data Science). 
+        My interest lies in science and technology. I would love to collaborate on projects that promote Sustainability.
+      </p>
+      <div class="links links1">
+        <a href="https://www.linkedin.com/in/ishan-kumar-sahu-17b845206/"><img src="{% static 'media/in.png' %}" width="30" height="30"></a>
+        <a href="https://github.com/Infoser"><img src="{% static 'media/gitt.png' %}" width="30" height="30"></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=issuatstudy090@gmail.com"><img src="{% static 'media/mail.png' %}" width="30" height="30"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card card2">
+    <img src="{% static 'media/adii.jpeg' %}" width="150" height="150" alt="aditi">
+    <div class="adi">
+      <h2>Aditi Singh</h2>
+      <p>
+        Hi!! I am Aditi Singh. I am an AI/ML enthusiast currently working on Web Development and IoT Projects. 
+        I am currently enrolled in Bhilai Institute of Technology Durg pursuing B.Tech CSE. 
+        My interest lies in science and technology. I would love to collaborate on projects that promote Sustainability.
+      </p>
+      <div class="links links2">
+        <a href="https://www.linkedin.com/in/aditi-singh-bab78528b"><img src="{% static 'media/in.png' %}" width="30" height="30"></a>
+        <a href="https://github.com/aditisingh2903"><img src="{% static 'media/gitt.png' %}" width="30" height="30"></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=singhaditi9210@gmail.com"><img src="{% static 'media/mail.png' %}" width="30" height="30"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+<style>
+  /* Prevent horizontal scroll */
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 40px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .card {
+    max-width: 100%;
+    background: #c7cef0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    transition: transform 0.2s;
+    box-sizing: border-box;
+  }
+
+  .card2 {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .adi {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .links {
+    display: flex;
+    gap: 1em;
+    margin-top: 10px;
+  }
+
+  .links2 {
+    justify-content: flex-end;
+  }
+</style>
+
+{% endblock body %}

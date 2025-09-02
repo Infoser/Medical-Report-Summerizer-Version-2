@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact</title>
+</head>
+<body>
+<div class="head">
+</div>
+<div class="main">
+  <div class="form-card1">
+    <div class="form-card2">
+      <h1 style="text-align: center;">Thank you for contacting us</h1>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+<style>
+html, body{
+  margin: 0;
+  padding: 0;
+  height:100%;
+  width:100%;
+  background-color: #bfd4f4; /* 👈 apni page bg color daalna */
+}
+/* Make page use flexbox so footer stays bottom */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header full width */
+.head{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-color: #bbd0f7;
+  width: 100%;
+  min-height:100vh;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding:20px;
+}
+.form-card1 {
+  background-image: linear-gradient(163deg, #97acf3 0%, #97acf3 100%);
+  border-radius: 22px;
+  transition: all 0.3s;
+  width: 95%;
+  max-width: 500px;
+}
+
+.form-card2 {
+  transition: all 0.2s;
+  border-radius: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2em;
+  background-color: #89a4cc;
+  border-radius: 20px;
+}
+
+.form-heading {
+  text-align: center;
+  color: #080808;
+  font-size: 1.4em;
+  margin-bottom: 1em;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0.6em;
+  background-color: #ffffff;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  width: 100%;
+  color: #000000;
+  padding: 0.5em;
+}
+
+.sendMessage-btn {
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  outline: 1px solid #000000;
+  background-color: transparent;
+  color: #000000;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.sendMessage-btn:hover {
+  background-color: #64ffda;
+  color: #000;
+}
+footer {
+  margin: 0;
+  padding:20px;
+  width: 100%;
+}
+</style>
+
+
+{% endblock body %}
