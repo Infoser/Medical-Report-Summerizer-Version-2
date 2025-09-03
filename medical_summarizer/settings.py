@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'summarizer',
     'cq',
+    'example',
 ]
 
 MIDDLEWARE = [
